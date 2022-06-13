@@ -7,59 +7,87 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="keywords" content="daniil, cv, resume">
    <meta name="description" content="Это сайт - резюме Даниила Дергунова">
+   <link rel="stylesheet" href="style.css">
    <title>Daniil Resume</title>
 </head>
 
 <body>
-   <div class="avatar">
-      <img src="../DDD_resume/img/logo.png" alt="это я">
-   </div>
-   <div>
-      <h1>Даниил Дергунов</h1>
+   <div class="container">
+      <div class="info">
+         <img src="../DDD_resume/img/logo.png" alt="это я">
 
-      <p>Я являюсь <strong>junior frontend</strong> разработчиком.</p>
+         <div class="info-text">
+            <h1>Даниил Дергунов</h1>
 
-      <p>Я <strong>люблю</strong> активный спорт и свою <strong> <em>девушку.</em> </strong></p>
+            <p>Я являюсь <strong>junior frontend</strong> разработчиком.</p>
 
-      <h2>Список моих контактов:</h2>
+            <p>Я <strong>люблю</strong> активный спорт и свою<strong> <em>девушку.</em></strong></p>
 
-      <a href="https://t.me/rogepta" target="_blank">Telegram |</a>
-      <a href="https://vk.com/3ple_d" target="_blank">| ВКонтакте</a>
-   </div>
+            <h2>Список моих контактов:</h2>
 
-   <div>
-      <h2>Мои хобби:</h2>
-      <ol>
-         <li>Путешествия</li>
-         <li>Тренажерный зал</li>
-         <li>Походы на природу</li>
-         <li>Английский язык</li>
-      </ol>
-   </div>
+            <a href="https://t.me/rogepta" target="_blank">Telegram</a>
+            <a href="https://vk.com/3ple_d" target="_blank">ВКонтакте</a>
+         </div>
+      </div>
+      <div class="card bg-aqua">
+         <h2>Мои хобби:</h2>
+         <ol class="list">
+            <li>Путешествия</li>
+            <li>Тренажерный зал</li>
+            <li>Походы на природу</li>
+            <li>Английский язык</li>
+         </ol>
+      </div>
 
-   <div>
-      <h2>Опыт работы</h2>
-      <table>
-         <thead>
-            <tr>
-               <th>Название</th>
-               <th>Должность</th>
-               <th>Год</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <td>СтройкаРу</td>
-               <td>Верстальщик</td>
-               <td>Сентябрь 2020 - Апрель 2021</td>
-            </tr>
-            <tr>
-               <td>Web-студия: "Хорошие решения"</td>
-               <td>Web-разработчик</td>
-               <td>Апрель 2021 - Апрель 2022 </td>
-            </tr>
-         </tbody>
-      </table>
+      <div class="card experience">
+         <h2>Опыт работы</h2>
+         <table class="table">
+            <!-- <thead>
+               <tr>
+                  <th>Название</th>
+                  <th>Должность</th>
+                  <th>Год</th>
+               </tr>
+            </thead> -->
+            <tbody>
+               <tr>
+                  <td>СтройкаРу</td>
+                  <td>Верстальщик</td>
+                  <td>Сентябрь 2020 - Апрель 2021</td>
+               </tr>
+               <tr>
+                  <td>Web-студия: "Хорошие решения"</td>
+                  <td>Web-разработчик</td>
+                  <td>Апрель 2021 - Апрель 2022 </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <form action="/" class="form">
+
+         <h2>Связаться со мной</h2>
+
+         <div class="form-row">
+
+            <div class="form-group">
+               <label for="name">Ваше имя:</label>
+               <input type="text" id="name" placeholder="Введите имя" tabindex="1">
+            </div>
+            <div class="form-group">
+               <label for="email">Ваш email:</label>
+               <input type="email" placeholder="Введите email" tabindex="2">
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            <br>
+            <textarea name="message" id="message" placeholder="Введите сообщение..." tabindex="3" cols="30"
+               rows="10"></textarea>
+         </div>
+         <div class="">
+            <button type="submit" tabindex="4" class="btn">Отправить!</button>
+         </div>
+      </form>
    </div>
 </body>
 
